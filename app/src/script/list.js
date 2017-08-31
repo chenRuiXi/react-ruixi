@@ -33,7 +33,7 @@ class List extends React.Component{
     render(){
         return (
             <div className='list-body'>
-               
+               list
             </div>
         )
     }
