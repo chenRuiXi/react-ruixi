@@ -1,0 +1,35 @@
+{
+  "name": "rs",
+  "version": "1.0.0",
+  "description": "react start demo",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config app/webpack.config.dev.js --progress --colors --inline",
+    "build": "webpack --config app/webpack.config.pro.js --progress --colors"
+  },
+  "author": "fddi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "css-loader": "^0.24.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.11.1",
+    "expose-loader": "^0.7.1",
+    "jquery": "^3.1.0",
+    "lodash": "^4.17.4",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
+}

@@ -1,0 +1,196 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;} 
+table {border-collapse:collapse;border-spacing:0;} 
+fieldset,img {border:0} 
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal} 
+ol,ul {list-style:none} 
+caption,th {text-align:left} 
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal} 
+q:before,q:after {content:''} 
+abbr,acronym { border:0}
+
+html,body{width: 100%; height: 100%;}
+body{overflow: hidden;}
+
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.fl{float: left; display:inline}
+.fr{float: right; display:inline}
+.cb{clear:both}
+.cl{clear:left}
+.cr{clear:right}
+.vm{vertical-align:middle} 
+.pr{position:relative} 
+.pa{position:absolute}
+.abs-right{position:absolute; right:0}
+.zoom{zoom:1} 
+.hidden{visibility:hidden} 
+.none{display:none}
+.oh{ overflow: hidden}
+
+.padding20{ padding: 20px;}
+.mb5{margin-bottom: 5px;}
+.padding5{padding: 5px;}
+.mw10{margin-left: 10px; margin-right: 10px;}
+.ph5{padding-top: 5px; padding-bottom: 5px;}
+.borderb{ border-bottom: 1px solid #eee;}
+/*行高的设置*/
+.l1{
+    line-height: 100%;
+}
+.l2{
+    line-height: 120%;
+}
+.l5{
+    line-height: 150%;
+}
+.l10{
+    line-height: 200%;
+}
+
+
+/*去除列表最后一项的下划线*/
+#app .list:last-child{
+    border-bottom: none;
+}
+
+/*媒体查询定义字体大小*/
+@media screen and (max-width: 300px) {
+    .f_large{
+        font-size: 28px;
+    }
+    .f_in{
+        font-size: 24px;
+    }
+    .f_small{
+        font-size: 18px;
+    }
+    .f_smalls{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:301px) and (max-width:750px){
+    .f_large{
+        font-size: 38px;
+    }
+    .f_in{
+        font-size: 30px;
+    }
+    .f_small{
+        font-size: 24px;
+    }
+    .f_smalls{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:751px) {
+    .f_large{
+        font-size: 45px;
+    }
+    .f_in{
+        font-size: 35px;
+    }
+    .f_small{
+        font-size: 24px;
+    }
+    .f_smalls{
+        font-size: 20px;
+    }
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.index-body, .list-body{
+    width: 100%;
+    height: 100%;
+}
+
+#index{
+    margin: 20px;
+}
+
+.labels_title{
+    text-align: center;
+}
+
+
+#inputPort{
+     position: absolute;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     background: #aaa;
+}
+
+#inputPort>div{
+    position: absolute;
+    text-align: center;
+    margin: 10px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 100px;
+    margin-left: -160px;
+    margin-top: -50px;
+
+}
+#inputPort>div>div{
+    margin-bottom: 20px;
+}
+
+#inputPort input{
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+
+#inputPort button{
+    font-size: 25px;
+    padding:  4px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    width: 100px;
+    color: #666;
+    background: #fff;
+}
+
+#showError{
+    position: absolute;
+    left: 50%;
+    top: -33px;
+    width: 200px;
+    text-align: center;
+    margin-left: -100px;
+    display: none;
+    color: red;
+}
+
+
+#connectError{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    width: 320px;
+    height: 65px;
+    font-size: 18px;
+    margin-left: -160px;
+    margin-top: -30px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #a94442;
+}
+
+
+@import './css/medicines.css';
